@@ -16,4 +16,4 @@ Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
   - [Google Colab](https://colab.research.google.com/)
   
 ### Acknowledgement
-Code heavily inspired by [original MUNIT pytorch implementation](https://github.com/NVlabs/MUNIT). Also borrow adaptive instance normalization code from [eridgd](https://github.com/eridgd/AdaIN-TF/blob/master/ops.py).
+Code heavily inspired by [original MUNIT pytorch implementation](https://github.com/NVlabs/MUNIT). Also borrow code from [eridgd](https://github.com/eridgd/AdaIN-TF/blob/master/ops.py) and [tjwei](https://github.com/tjwei/GANotebooks).
