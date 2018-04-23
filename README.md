@@ -5,9 +5,12 @@ A keras (tensorflow) reimplementation of MUNIT: Multimodal Unsupervised Image-to
 Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
 
 ### Deviation from the original implementation
-  1. ~~Use [group normalization](https://arxiv.org/abs/1803.08494) instead of layer normalization in up scaling blocks.~~ Model using group norm failed on reconstructing edge images of edges2shoe dataset.
+  1. ~~Use [group normalization](https://arxiv.org/abs/1803.08494) instead of layer normalization in upscaling blocks.~~ 
+      - Model using group norm failed on reconstructing edge images of edges2shoe dataset.
   2. Use [mixup](https://arxiv.org/abs/1710.09412) technique for training.
   3. Input/Output sizes are 128x128.
+  4. Use only 3 res blocks (instead of 4) in content encoder/decoder in order to reduce training time. 
+      - However I'm worrying that this decreases the receptive field size so that the output quality becomes worse.
   
 ### Result
   - Edges2shoes result to be updated.
