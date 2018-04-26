@@ -13,7 +13,11 @@ Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
       - However, I'm worrying that this decreases the receptive field size so that the output quality becomes worse.
   
 ### Result
-  - Edges2shoes result to be updated.
+  - Edges2shoes result.
+    - Resolution: 64 x 64.
+    - Trainig iterations: 150k.
+    
+  - ![](https://github.com/shaoanlu/MUNIT-keras/raw/master/edges2shoes_64x64.jpg)
   
 ### Environment
   - [Google Colab](https://colab.research.google.com/)
