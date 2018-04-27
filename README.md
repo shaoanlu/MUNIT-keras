@@ -12,15 +12,11 @@ Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
   4. Use only 3 res blocks (instead of 4) as default in content encoder/decoder in order to reduce training time. 
       - However, I'm worrying that this decreases the receptive field size so that the output quality becomes worse.
   
-### Result
-  - Edges2shoes result.
-    - Resolution: 64 x 64.
-    - Trainig iterations: 150k.
-    
-  - ![](https://github.com/shaoanlu/MUNIT-keras/raw/master/edges2shoes_64x64.jpg)
-  
 ### Environment
   - [Google Colab](https://colab.research.google.com/)
+  
+### Result
+  - Edges2shoes to be updated.
   
 ### Acknowledgement
 Code heavily inspired by [original MUNIT pytorch implementation](https://github.com/NVlabs/MUNIT). Also borrow code from [eridgd](https://github.com/eridgd/AdaIN-TF/blob/master/ops.py) and [tjwei](https://github.com/tjwei/GANotebooks).
