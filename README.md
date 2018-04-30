@@ -16,7 +16,18 @@ Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
   - [Google Colab](https://colab.research.google.com/)
   
 ### Result
-  - Edges2shoes to be updated.
+  - **Edges2shoes** (config. 1)
+    - **Cyclic reconstruction loss weight = 1** for the first 80k iters and 0.3 for the rest.
+    - Trainin iterations: ~130k
+    - Optimization: Use [mixup](https://arxiv.org/abs/1710.09412) technique for the first 80k iters.
+    - ![](https://github.com/shaoanlu/MUNIT-keras/raw/master/MUNIT_64x64.jpg)
+  
+  - **Edges2shoes** (config. 2)
+    - **Cyclic reconstruction loss weight = 10**
+    - Training iterations: ~70k
+    - Optimization: Use [mixup](https://arxiv.org/abs/1710.09412) technique for the entire training process.
+    - ![](https://github.com/shaoanlu/MUNIT-keras/raw/master/MUNIT_64x64_cycrec10.jpg)
+    - Model performs better (generates more detail and clearer edges) on guided translation when using high reconstruction loss?
   
 ### Acknowledgement
 Code heavily inspired by [original MUNIT pytorch implementation](https://github.com/NVlabs/MUNIT). Also borrow code from [eridgd](https://github.com/eridgd/AdaIN-TF/blob/master/ops.py) and [tjwei](https://github.com/tjwei/GANotebooks).
