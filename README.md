@@ -6,11 +6,12 @@ Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
 
 ### Deviation from the original implementation
   1. ~~Use [group normalization](https://arxiv.org/abs/1803.08494) instead of layer normalization in upscaling blocks.~~ 
-      - Model using group norm failed on reconstructing edge images of edges2shoe dataset.
+      - Model using group norm (group=8) failed on reconstructing edge images of edges2shoe dataset.
   2. Use [mixup](https://arxiv.org/abs/1710.09412) technique for training.
   3. Input/Output size is defaulted 128x128.
   4. Use only 3 res blocks (instead of 4) as default in content encoder/decoder in order to reduce training time. 
       - However, I'm worrying that this decreases the receptive field size so that the output quality becomes worse.
+  5. Upscaling blocks use conv2d having `kernel_size` = 3 instead of 4.
   
 ### Environment
   - [Google Colab](https://colab.research.google.com/)
