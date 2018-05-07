@@ -4,7 +4,7 @@ A keras (tensorflow) reimplementation of MUNIT: Multimodal Unsupervised Image-to
 ### [Multimodal Unsupervised Image-to-Image Translation](https://arxiv.org/abs/1804.04732)
 Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
 
-### Deviation from the original implementation
+### Deviation from the official  implementation
   1. ~~Use [group normalization](https://arxiv.org/abs/1803.08494) instead of layer normalization in upscaling blocks.~~ 
       - Model using group norm (group=8) failed on reconstructing edge images of edges2shoe dataset.
   2. Use [mixup](https://arxiv.org/abs/1710.09412) technique for training.
@@ -33,4 +33,4 @@ Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz
     - Model performed better on guided translation (generated more detail and clearer edges) when using high reconstruction loss?
   
 ### Acknowledgement
-Code heavily inspired by [original MUNIT pytorch implementation](https://github.com/NVlabs/MUNIT). Also borrow code from [eridgd](https://github.com/eridgd/AdaIN-TF/blob/master/ops.py) and [tjwei](https://github.com/tjwei/GANotebooks).
+Code heavily inspired by [official  MUNIT pytorch implementation](https://github.com/NVlabs/MUNIT). Also borrow code from [eridgd](https://github.com/eridgd/AdaIN-TF/blob/master/ops.py) and [tjwei](https://github.com/tjwei/GANotebooks).
